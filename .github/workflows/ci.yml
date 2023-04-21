@@ -19,7 +19,10 @@ jobs:
         run: |
           git config --local user.email "Darker56@163.com"
           git config --local user.name "DDkroe"
-          git remote set-url origin https://$:$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@$github.com/${{ github.repository }}
+          git remote set-url origin https:https://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@github.com/DDkroe/reimagined-enigma
           git pull --rebase
           git commit --allow-empty -m "a commit a day keeps your girlfriend away"
+          --chmod=(+|-)x
+          Set the execute permissions on the updated files.
+          git update-index --chmod=+x ci.yml
           git push
